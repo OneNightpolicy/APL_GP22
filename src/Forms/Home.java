@@ -2,7 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package student.infor;
+package Forms;
+
+import db.DBConnection;
+import java.sql.Connection;
 
 /**
  *
@@ -49,7 +52,6 @@ public class Home extends javax.swing.JFrame {
         btnAdd = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         btnUpdate = new javax.swing.JButton();
-        DOBpicker = new com.github.lgooddatepicker.components.DatePicker();
         jPanel7 = new javax.swing.JPanel();
         txtID = new javax.swing.JTextField();
         cbC1 = new javax.swing.JComboBox<>();
@@ -92,10 +94,10 @@ public class Home extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel2.setText("Student Information system ");
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setText("Student Information system ");
 
         jTabbedPane1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
 
@@ -108,8 +110,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        cbgender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
         cbgender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbgender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
 
         txtPnumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,60 +119,60 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btnRead.setText("Read");
         btnRead.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnRead.setText("Read");
         btnRead.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReadActionPerformed(evt);
             }
         });
 
-        lblSID.setText("Student's ID");
         lblSID.setBackground(new java.awt.Color(255, 255, 255));
         lblSID.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblSID.setText("Student's ID");
 
-        lblSname.setText("Student's Name");
         lblSname.setBackground(new java.awt.Color(255, 255, 255));
         lblSname.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblSname.setText("Student's Name");
 
-        lblDOB.setText("Date of Birth ");
         lblDOB.setBackground(new java.awt.Color(255, 255, 255));
         lblDOB.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblDOB.setText("Date of Birth ");
 
-        lblgender.setText("Gender ");
         lblgender.setBackground(new java.awt.Color(255, 255, 255));
         lblgender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblgender.setText("Gender ");
 
-        lblPnumber.setText("Parent Number");
         lblPnumber.setBackground(new java.awt.Color(255, 255, 255));
         lblPnumber.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblPnumber.setText("Parent Number");
 
-        Pname.setText("Parent Name");
         Pname.setBackground(new java.awt.Color(255, 255, 255));
         Pname.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        Pname.setText("Parent Name");
 
-        lblHaddress.setText("Home Address ");
         lblHaddress.setBackground(new java.awt.Color(255, 255, 255));
         lblHaddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblHaddress.setText("Home Address ");
 
-        btnAdd.setText("Create");
         btnAdd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAdd.setText("Create");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
             }
         });
 
-        btnDelete.setText("Delete");
         btnDelete.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
 
-        btnUpdate.setText("Update");
         btnUpdate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
@@ -200,8 +202,7 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(txtPnumber, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
                             .addComponent(txtPname, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
                             .addComponent(txtHaddress, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
-                            .addComponent(cbgender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(DOBpicker, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(cbgender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -225,9 +226,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(txtStudentName, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblSname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDOB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(DOBpicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(lblDOB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbgender, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -250,7 +249,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Student ", jPanel3);
@@ -258,43 +257,43 @@ public class Home extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(204, 204, 255));
         jPanel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        cbC1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
         cbC1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbC1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
 
-        btnCRead.setText("Read");
         btnCRead.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCRead.setText("Read");
         btnCRead.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCReadActionPerformed(evt);
             }
         });
 
-        jLabel12.setText("ID");
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel12.setText("ID");
 
-        jLabel13.setText("Student ");
         jLabel13.setBackground(new java.awt.Color(255, 255, 255));
         jLabel13.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel13.setText("Student ");
 
-        jLabel14.setText("Lecturers");
         jLabel14.setBackground(new java.awt.Color(255, 255, 255));
         jLabel14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel14.setText("Lecturers");
 
-        jLabel15.setText("Course 1");
         jLabel15.setBackground(new java.awt.Color(255, 255, 255));
         jLabel15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel15.setText("Course 1");
 
-        btnCupdate.setText("Update");
         btnCupdate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCupdate.setText("Update");
         btnCupdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCupdateActionPerformed(evt);
             }
         });
 
-        btnCreate.setText("Create");
         btnCreate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCreate.setText("Create");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateActionPerformed(evt);
@@ -310,17 +309,17 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setText("Search");
         jButton8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton8.setText("Search");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
 
-        jLabel11.setText("Student's ID");
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel11.setText("Student's ID");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -346,29 +345,29 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel18.setText("Semester ");
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel18.setText("Semester ");
 
-        cbSemester.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
         cbSemester.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbSemester.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
 
-        cbLecturers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
         cbLecturers.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbLecturers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
 
-        cbC2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
         cbC2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbC2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
 
-        cbC3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
         cbC3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbC3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male ", "Female ", "Other" }));
 
-        jLabel19.setText("Course 2");
         jLabel19.setBackground(new java.awt.Color(255, 255, 255));
         jLabel19.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel19.setText("Course 2");
 
-        jLabel20.setText("Course 3");
         jLabel20.setBackground(new java.awt.Color(255, 255, 255));
         jLabel20.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel20.setText("Course 3");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -498,11 +497,11 @@ public class Home extends javax.swing.JFrame {
         jTextField6.setFont(new java.awt.Font("DialogInput", 1, 12)); // NOI18N
         jTextField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
 
-        jButton2.setText("Refresh");
         jButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton2.setText("Refresh");
 
-        jButton3.setText("Search");
         jButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton3.setText("Search");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -705,13 +704,19 @@ public class Home extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                Connection con = DBConnection.getConnection();
+        if (con!=null){
+            System.out.println("Connection is established successfully.");
+        }
+        else{
+            System.out.println("Can't connect to database");
+        }
                 new Home().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.github.lgooddatepicker.components.DatePicker DOBpicker;
     private javax.swing.JLabel Pname;
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnCRead;
