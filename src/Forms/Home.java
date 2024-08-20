@@ -21,10 +21,11 @@ import javax.swing.table.DefaultTableModel;
  * @author asus
  */
 public class Home extends javax.swing.JFrame {
+
     Student student = new Student();
     private DefaultTableModel model;
     private int rowIndex;
-    
+
     public Home() {
         initComponents();
         init();
@@ -61,10 +62,8 @@ public class Home extends javax.swing.JFrame {
         txtPNumber = new javax.swing.JTextField();
         txtHaddress = new javax.swing.JTextField();
         btnAdd = new javax.swing.JButton();
-        btnRead = new javax.swing.JButton();
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
-        btnlogout = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
         DOB = new com.toedter.calendar.JDateChooser();
         jPanel6 = new javax.swing.JPanel();
@@ -108,7 +107,6 @@ public class Home extends javax.swing.JFrame {
         btnCreate = new javax.swing.JButton();
         btnCRead = new javax.swing.JButton();
         btnCupdate = new javax.swing.JButton();
-        btnClogout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 204, 204));
@@ -213,14 +211,6 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btnRead.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnRead.setText("Read");
-        btnRead.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReadActionPerformed(evt);
-            }
-        });
-
         btnUpdate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -234,14 +224,6 @@ public class Home extends javax.swing.JFrame {
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
-            }
-        });
-
-        btnlogout.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnlogout.setText("Logout");
-        btnlogout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnlogoutActionPerformed(evt);
             }
         });
 
@@ -281,8 +263,8 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
-                        .addComponent(btnRead, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel9Layout.createSequentialGroup()
@@ -294,12 +276,7 @@ public class Home extends javax.swing.JFrame {
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtHaddress)
                             .addComponent(txtPNumber)
-                            .addComponent(txtPName)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnlogout, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtPName))))
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -338,15 +315,11 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(txtHaddress, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRead, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnlogout, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGap(59, 59, 59))
         );
 
         jPanel6.setBackground(new java.awt.Color(204, 204, 255));
@@ -355,14 +328,25 @@ public class Home extends javax.swing.JFrame {
         jPanel10.setBackground(new java.awt.Color(153, 153, 153));
         jPanel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jTextField7.setFont(new java.awt.Font("DialogInput", 1, 12)); // NOI18N
+        jTextField7.setFont(new java.awt.Font("DialogInput", 1, 18)); // NOI18N
         jTextField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         jButton4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton4.setText("Refresh");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton5.setText("Search");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -370,14 +354,14 @@ public class Home extends javax.swing.JFrame {
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(71, 71, 71)
+                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(118, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -386,9 +370,9 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel16)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34))
@@ -428,7 +412,7 @@ public class Home extends javax.swing.JFrame {
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 627, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -446,7 +430,7 @@ public class Home extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -508,7 +492,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel17)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(125, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -705,14 +689,6 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btnClogout.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnClogout.setText("Logout");
-        btnClogout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClogoutActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
@@ -748,16 +724,11 @@ public class Home extends javax.swing.JFrame {
                                         .addComponent(cbSemester, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnCRead, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnCupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addGap(244, 244, 244)
-                                .addComponent(btnClogout, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnCRead, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnCupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
@@ -798,9 +769,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCRead, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btnClogout, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -879,12 +848,13 @@ public class Home extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
-    public void init(){
+
+    public void init() {
         tableViewStudent();
         txtStudentID.setText(String.valueOf(student.getMax()));
     }
-    private void tableViewStudent(){
+
+    private void tableViewStudent() {
         student.getStudentValue(Tstudent, "");
         model = (DefaultTableModel) Tstudent.getModel();
         Tstudent.setRowHeight(30);
@@ -892,9 +862,9 @@ public class Home extends javax.swing.JFrame {
         Tstudent.setGridColor(Color.black);
         Tstudent.setBackground(Color.white);
     }
-    private void clearStudent(){
+
+    private void clearStudent() {
         txtStudentID.setText(String.valueOf(student.getMax()));
-        txtStudentID.setText(null);
         txtStudentName.setText(null);
         txtPName.setText(null);
         txtPNumber.setText(null);
@@ -903,27 +873,31 @@ public class Home extends javax.swing.JFrame {
         cbgender.setSelectedIndex(0);
         Tstudent.clearSelection();
     }
-    public boolean isEmptystudent(){
-        if(txtStudentName.getText().isEmpty()){
+
+    public boolean isEmptystudent() {
+        if (txtStudentName.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Student name is missing");
             return false;
-        }Date dob = DOB.getDate();  // Assuming DOB is a JDateChooser
+        }
+        Date dob = DOB.getDate();  // Assuming DOB is a JDateChooser
         if (dob == null) {
             JOptionPane.showMessageDialog(this, "Please select a date of birth.");
             return false;
         }
         // Compare the selected date with the current date
         if (dob.compareTo(new Date()) > 0) {
-        JOptionPane.showMessageDialog(this, "Student date of birth is incorrect.");
-        return false;
+            JOptionPane.showMessageDialog(this, "Student date of birth is incorrect.");
+            return false;
         }
-        if(txtPName.getText().isEmpty()){
+        if (txtPName.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Parent name is missing");
             return false;
-        }if(txtPNumber.getText().length()>=15){
+        }
+        if (txtPNumber.getText().length() >= 15) {
             JOptionPane.showMessageDialog(this, "Parent number is to long");
             return false;
-        }if(txtHaddress.getText().isEmpty()){
+        }
+        if (txtHaddress.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Home Address is missing");
             return false;
         }
@@ -933,16 +907,12 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtStudentIDActionPerformed
 
-    private void btnReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReadActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReadActionPerformed
-
     private void txtStudentNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStudentNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtStudentNameActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        if(isEmptystudent()){
+        if (isEmptystudent()) {
             int id = student.getMax();
             String name = txtStudentName.getText();
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -952,28 +922,43 @@ public class Home extends javax.swing.JFrame {
             String phone = txtPNumber.getText();
             String address = txtHaddress.getText();
             student.insert(id, name, date, gender, parent, phone, address);
-            Tstudent.setModel(new DefaultTableModel(null,new Object[]{"Student ID","Student name","Date of Birth","Gender","Parent name","Parent number","Adress"}));
+            Tstudent.setModel(new DefaultTableModel(null, new Object[]{"Student ID", "Student name", "Date of Birth", "Gender", "Parent name", "Parent number", "Adress"}));
             student.getStudentValue(Tstudent, "");
             clearStudent();
         }
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        // TODO add your handling code here:
+        int id = Integer.valueOf(txtStudentID.getText());
+        if (student.isIDExist(id)) {
+            student.delete(id);
+            Tstudent.setModel(new DefaultTableModel(null, new Object[]{"Student ID", "Student name", "Date of Birth", "Gender", "Parent name", "Parent number", "Adress"}));
+            student.getStudentValue(Tstudent, "");
+            clearStudent();
+        } else {
+            JOptionPane.showMessageDialog(this, "Student id dosen't exist");
+        }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-        if(isEmptystudent()){
+        if (isEmptystudent()) {
             int id = Integer.parseInt(txtStudentID.getText());
-            String name = txtStudentName.getText();
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            String date = dateFormat.format(DOB.getDate());
-            String gender = cbgender.getSelectedItem().toString();
-            String parent = txtPName.getText();
-            String phone = txtPNumber.getText();
-            String address = txtHaddress.getText();
-            student.insert(id, name, date, gender, parent, phone, address);
-            clearStudent();
+            if (student.isIDExist(id)) {
+                String name = txtStudentName.getText();
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                String date = dateFormat.format(DOB.getDate());
+                String gender = cbgender.getSelectedItem().toString();
+                String parent = txtPName.getText();
+                String phone = txtPNumber.getText();
+                String address = txtHaddress.getText();
+                student.update(id, name, date, gender, parent, phone, address);
+                Tstudent.setModel(new DefaultTableModel(null, new Object[]{"Student ID", "Student name", "Date of Birth", "Gender", "Parent name", "Parent number", "Adress"}));
+                student.getStudentValue(Tstudent, "");
+                clearStudent();
+            } else {
+                JOptionPane.showMessageDialog(this, "Student id dosen't exist");
+            }
+
         }
     }//GEN-LAST:event_btnUpdateActionPerformed
 
@@ -1009,30 +994,16 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtHaddressActionPerformed
 
-    private void btnlogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlogoutActionPerformed
-        int a = JOptionPane.showConfirmDialog(this, "Do you want to logout now?","Select",JOptionPane.YES_NO_OPTION);
-        if(a == 0) {
-            this.dispose();
-        }
-    }//GEN-LAST:event_btnlogoutActionPerformed
-
-    private void btnClogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClogoutActionPerformed
-        int a = JOptionPane.showConfirmDialog(this, "Do you want to logout now?","Select",JOptionPane.YES_NO_OPTION);
-        if(a == 0) {
-            this.dispose();
-        }
-    }//GEN-LAST:event_btnClogoutActionPerformed
-
     private void cbSemesterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbSemesterActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cbSemesterActionPerformed
 
     private void jLabel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseDragged
-      
+
     }//GEN-LAST:event_jLabel2MouseDragged
 
     private void jLabel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MousePressed
-        
+
     }//GEN-LAST:event_jLabel2MousePressed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
@@ -1040,7 +1011,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void txtPNumberKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPNumberKeyTyped
-        if(!Character.isDigit(evt.getKeyChar())){
+        if (!Character.isDigit(evt.getKeyChar())) {
             evt.consume();
         }
     }//GEN-LAST:event_txtPNumberKeyTyped
@@ -1077,6 +1048,21 @@ public class Home extends javax.swing.JFrame {
         txtHaddress.setText(model.getValueAt(rowIndex, 6).toString());
     }//GEN-LAST:event_TstudentMouseClicked
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        if (jTextField7.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "please enter a student id");
+        } else {
+            Tstudent.setModel(new DefaultTableModel(null, new Object[]{"Student ID", "Student name", "Date of Birth", "Gender", "Parent name", "Parent number", "Adress"}));
+            student.getStudentValue(Tstudent, jTextField7.getText());
+        }
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Tstudent.setModel(new DefaultTableModel(null, new Object[]{"Student ID", "Student name", "Date of Birth", "Gender", "Parent name", "Parent number", "Adress"}));
+        student.getStudentValue(Tstudent, "");
+        jTextField7.setText(null);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1108,12 +1094,11 @@ public class Home extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Connection con = DBConnection.getConnection();
-        if (con!=null){
-            System.out.println("Connection is established successfully.");
-        }
-        else{
-            System.out.println("Can't connect to database");
-        }
+                if (con != null) {
+                    System.out.println("Connection is established successfully.");
+                } else {
+                    System.out.println("Can't connect to database");
+                }
                 new Home().setVisible(true);
             }
         });
@@ -1126,13 +1111,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnCRead;
     private javax.swing.JButton btnClear;
-    private javax.swing.JButton btnClogout;
     private javax.swing.JButton btnCreate;
     private javax.swing.JButton btnCupdate;
     private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnRead;
     private javax.swing.JButton btnUpdate;
-    private javax.swing.JButton btnlogout;
     private javax.swing.JComboBox<String> cbC1;
     private javax.swing.JComboBox<String> cbC2;
     private javax.swing.JComboBox<String> cbC3;
