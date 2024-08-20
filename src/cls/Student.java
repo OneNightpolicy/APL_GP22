@@ -5,6 +5,8 @@ import db.DBConnection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 public class Student {  // Use PascalCase for class names
     Connection con = DBConnection.getConnection();
@@ -60,4 +62,28 @@ public class Student {  // Use PascalCase for class names
         }
     }
 }
+    //get all the student values from  database student table
+    public void getStudentValue(JTable table, String searchValue){
+        String sql = "SELECT * FROM student where CONCAT(id)like ? order by id desc";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setString(1, "%"+searchValue+"%");
+            ResultSet rs = ps.executeQuery();
+            DefaultTableModel model = (DefaultTableModel) table.getModel();
+            Object[] row;
+            while(rs.next()){
+                row = new Object[7];
+                row[0] = rs.getInt(1);
+                row[1] = rs.getString(2);
+                row[2] = rs.getString(3);
+                row[3] = rs.getString(4);
+                row[4] = rs.getString(5);
+                row[5] = rs.getString(6);
+                row[6] = rs.getString(7);
+                model.addRow(row);
+            }
+        }catch(SQLException ex){
+            Logger.getLogger(Student.class.getName()).log(Level.SEVERE,null,ex);
+        }
+    }
 }

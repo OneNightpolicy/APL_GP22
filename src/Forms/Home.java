@@ -8,8 +8,11 @@ import cls.Student;
 import db.DBConnection;
 import java.awt.Color;
 import java.sql.Connection;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -19,8 +22,9 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Home extends javax.swing.JFrame {
     Student student = new Student();
-    
     private DefaultTableModel model;
+    private int rowIndex;
+    
     public Home() {
         initComponents();
         init();
@@ -175,6 +179,11 @@ public class Home extends javax.swing.JFrame {
 
         cbgender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         cbgender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Male", "Female" }));
+        cbgender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbgenderActionPerformed(evt);
+            }
+        });
 
         Pname.setBackground(new java.awt.Color(255, 255, 255));
         Pname.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -402,6 +411,11 @@ public class Home extends javax.swing.JFrame {
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
+            }
+        });
+        Tstudent.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TstudentMouseClicked(evt);
             }
         });
         jScrollPane1.setViewportView(Tstudent);
@@ -871,6 +885,7 @@ public class Home extends javax.swing.JFrame {
         txtStudentID.setText(String.valueOf(student.getMax()));
     }
     private void tableViewStudent(){
+        student.getStudentValue(Tstudent, "");
         model = (DefaultTableModel) Tstudent.getModel();
         Tstudent.setRowHeight(30);
         Tstudent.setShowGrid(true);
@@ -937,6 +952,8 @@ public class Home extends javax.swing.JFrame {
             String phone = txtPNumber.getText();
             String address = txtHaddress.getText();
             student.insert(id, name, date, gender, parent, phone, address);
+            Tstudent.setModel(new DefaultTableModel(null,new Object[]{"Student ID","Student name","Date of Birth","Gender","Parent name","Parent number","Adress"}));
+            student.getStudentValue(Tstudent, "");
             clearStudent();
         }
     }//GEN-LAST:event_btnAddActionPerformed
@@ -946,7 +963,18 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-        // TODO add your handling code here:
+        if(isEmptystudent()){
+            int id = Integer.parseInt(txtStudentID.getText());
+            String name = txtStudentName.getText();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            String date = dateFormat.format(DOB.getDate());
+            String gender = cbgender.getSelectedItem().toString();
+            String parent = txtPName.getText();
+            String phone = txtPNumber.getText();
+            String address = txtHaddress.getText();
+            student.insert(id, name, date, gender, parent, phone, address);
+            clearStudent();
+        }
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void txtFindIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindIDActionPerformed
@@ -1016,6 +1044,38 @@ public class Home extends javax.swing.JFrame {
             evt.consume();
         }
     }//GEN-LAST:event_txtPNumberKeyTyped
+
+    private void cbgenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbgenderActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbgenderActionPerformed
+
+    private void TstudentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TstudentMouseClicked
+        model = (DefaultTableModel) Tstudent.getModel();
+        rowIndex = Tstudent.getSelectedRow();
+        txtStudentID.setText(model.getValueAt(rowIndex, 0).toString());
+        txtStudentName.setText(model.getValueAt(rowIndex, 1).toString());
+        try {
+            Date date = new SimpleDateFormat("yyyy-MM-dd").parse(model.getValueAt(rowIndex, 2).toString());
+            DOB.setDate(date);
+        } catch (ParseException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        String gender = model.getValueAt(rowIndex, 3).toString();
+        switch (gender) {
+            case "":
+                cbgender.setSelectedIndex(0);
+                break;
+            case "Male":
+                cbgender.setSelectedIndex(1);
+                break;
+            default:
+                cbgender.setSelectedIndex(2);
+                break;
+        }
+        txtPName.setText(model.getValueAt(rowIndex, 4).toString());
+        txtPNumber.setText(model.getValueAt(rowIndex, 5).toString());
+        txtHaddress.setText(model.getValueAt(rowIndex, 6).toString());
+    }//GEN-LAST:event_TstudentMouseClicked
 
     /**
      * @param args the command line arguments
