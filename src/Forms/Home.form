@@ -192,7 +192,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
+                            <LineBorder roundedCorners="true"/>
                           </Border>
                         </Property>
                       </Properties>
@@ -649,7 +649,7 @@
                                   <Properties>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                        <LineBorder/>
+                                        <LineBorder roundedCorners="true"/>
                                       </Border>
                                     </Property>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
@@ -776,7 +776,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder thickness="2"/>
+                            <LineBorder roundedCorners="true" thickness="2"/>
                           </Border>
                         </Property>
                       </Properties>
@@ -820,7 +820,7 @@
                               <Properties>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                    <LineBorder/>
+                                    <LineBorder roundedCorners="true"/>
                                   </Border>
                                 </Property>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
@@ -889,7 +889,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
+                            <LineBorder roundedCorners="true"/>
                           </Border>
                         </Property>
                       </Properties>
@@ -904,17 +904,17 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel12" min="-2" pref="52" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="txtID" min="-2" pref="267" max="-2" attributes="0"/>
+                                          <Component id="txtCID" min="-2" pref="267" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace pref="135" max="32767" attributes="0"/>
-                                          <Component id="txtstudent" min="-2" pref="267" max="-2" attributes="0"/>
+                                          <Component id="txtCstudentID" min="-2" pref="267" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="cbSemester" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbCSemester" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -935,7 +935,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="cbLecturers" min="-2" pref="267" max="-2" attributes="0"/>
+                                          <Component id="cbCLecturers" min="-2" pref="267" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
@@ -944,11 +944,11 @@
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                          <Component id="btnCreate" min="-2" pref="104" max="-2" attributes="0"/>
+                                          <Component id="btnCAdd" min="-2" pref="104" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="btnCRead" min="-2" pref="104" max="-2" attributes="0"/>
+                                          <Component id="btnCPrint" min="-2" pref="104" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="btnCupdate" min="-2" pref="104" max="-2" attributes="0"/>
+                                          <Component id="btnCClear" min="-2" pref="104" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -963,22 +963,22 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtID" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="txtCID" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel13" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="txtstudent" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="txtCstudentID" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cbSemester" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbCSemester" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cbLecturers" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="cbCLecturers" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -997,9 +997,9 @@
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="btnCreate" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="btnCRead" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="btnCupdate" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnCAdd" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnCPrint" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnCClear" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
@@ -1028,9 +1028,9 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="txtFindID" max="32767" attributes="0"/>
+                                              <Component id="txtCFindID" max="32767" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jButton8" min="-2" pref="89" max="-2" attributes="0"/>
+                                              <Component id="btnCsearch" min="-2" pref="89" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
@@ -1048,8 +1048,8 @@
                                       <Component id="jLabel11" pref="22" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="txtFindID" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Component id="jButton8" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="txtCFindID" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="btnCsearch" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace pref="10" max="32767" attributes="0"/>
                                   </Group>
@@ -1057,12 +1057,12 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JTextField" name="txtFindID">
+                            <Component class="javax.swing.JTextField" name="txtCFindID">
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFindIDActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCFindIDActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JButton" name="jButton8">
+                            <Component class="javax.swing.JButton" name="btnCsearch">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
@@ -1070,7 +1070,7 @@
                                 <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCsearchActionPerformed"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel11">
@@ -1086,9 +1086,9 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JTextField" name="txtID">
+                        <Component class="javax.swing.JTextField" name="txtCID">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIDActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCIDActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel12">
@@ -1116,9 +1116,9 @@
                             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Student&apos;s"/>
                           </AccessibilityProperties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="txtstudent">
+                        <Component class="javax.swing.JTextField" name="txtCstudentID">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtstudentActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCstudentIDActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel18">
@@ -1132,22 +1132,21 @@
                             <Property name="text" type="java.lang.String" value="Semester "/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cbSemester">
+                        <Component class="javax.swing.JComboBox" name="cbCSemester">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="4">
+                              <StringArray count="3">
                                 <StringItem index="0" value=""/>
                                 <StringItem index="1" value="1"/>
                                 <StringItem index="2" value="2"/>
-                                <StringItem index="3" value=""/>
                               </StringArray>
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbSemesterActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbCSemesterActionPerformed"/>
                           </Events>
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -1164,7 +1163,7 @@
                             <Property name="text" type="java.lang.String" value="Lecturers"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cbLecturers">
+                        <Component class="javax.swing.JComboBox" name="cbCLecturers">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1279,7 +1278,7 @@
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                           </AuxValues>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCreate">
+                        <Component class="javax.swing.JButton" name="btnCAdd">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1287,10 +1286,10 @@
                             <Property name="text" type="java.lang.String" value="Add"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreateActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCAddActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCRead">
+                        <Component class="javax.swing.JButton" name="btnCPrint">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1298,10 +1297,10 @@
                             <Property name="text" type="java.lang.String" value="Print"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCReadActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCPrintActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCupdate">
+                        <Component class="javax.swing.JButton" name="btnCClear">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1309,7 +1308,7 @@
                             <Property name="text" type="java.lang.String" value="Clear"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCupdateActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCClearActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
@@ -1500,7 +1499,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
+                            <LineBorder roundedCorners="true"/>
                           </Border>
                         </Property>
                       </Properties>
@@ -1511,23 +1510,6 @@
                               <Group type="102" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="jPanel21" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                                          <Component id="jLabel23" min="-2" pref="52" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="txtID1" min="-2" pref="297" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel24" min="-2" pref="98" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                                          <Component id="txtstudent1" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel26" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
@@ -1538,42 +1520,59 @@
                                           <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="cbLecturers1" max="32767" attributes="0"/>
+                                                  <Component id="cbGLecturers" max="32767" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
                                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                       <Group type="102" attributes="0">
-                                                          <Component id="cbC6" min="-2" pref="218" max="-2" attributes="0"/>
+                                                          <Component id="cbGC3" min="-2" pref="218" max="-2" attributes="0"/>
                                                           <EmptySpace max="32767" attributes="0"/>
-                                                          <Component id="jTextField5" min="-2" pref="61" max="-2" attributes="0"/>
+                                                          <Component id="txtGS3" min="-2" pref="61" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="102" attributes="0">
-                                                          <Component id="cbC5" min="-2" pref="218" max="-2" attributes="0"/>
+                                                          <Component id="cbGC2" min="-2" pref="218" max="-2" attributes="0"/>
                                                           <EmptySpace max="32767" attributes="0"/>
-                                                          <Component id="jTextField4" min="-2" pref="61" max="-2" attributes="0"/>
+                                                          <Component id="txtGS2" min="-2" pref="61" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="102" attributes="0">
-                                                          <Component id="cbC4" min="-2" pref="224" max="-2" attributes="0"/>
+                                                          <Component id="cbGC1" min="-2" pref="224" max="-2" attributes="0"/>
                                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="jTextField2" min="-2" pref="61" max="-2" attributes="0"/>
+                                                          <Component id="txtGS1" min="-2" pref="61" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jPanel21" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                                  <Component id="jLabel23" min="-2" pref="52" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="txtGID" min="-2" pref="297" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jLabel24" min="-2" pref="98" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <Component id="txtGstudent" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="btnCreate1" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <Component id="btnGadd" min="-2" pref="104" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnCupdate1" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <Component id="btnGupdate" min="-2" pref="104" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnCupdate3" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <Component id="btnGclear" min="-2" pref="104" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnCRead1" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <Component id="btnGprint" min="-2" pref="104" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1586,48 +1585,48 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtID1" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="txtGID" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="txtstudent1" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="txtGstudent" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                       <Component id="jLabel24" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cbLecturers1" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="cbGLecturers" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="cbC4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                                          <Component id="jTextField2" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="cbGC1" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="txtGS1" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="cbC5" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                                          <Component id="jTextField4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="cbGC2" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="txtGS2" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel29" min="-2" pref="27" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="cbC6" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                                          <Component id="jTextField5" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="cbGC3" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="txtGS3" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="btnCreate1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="btnCupdate1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="btnCupdate3" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="btnCRead1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnGadd" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnGupdate" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnGclear" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnGprint" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
@@ -1665,11 +1664,11 @@
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="txtFindID3" max="32767" attributes="0"/>
+                                                  <Component id="txtGFindSemester" max="32767" attributes="0"/>
                                                   <Group type="102" attributes="0">
-                                                      <Component id="txtFindID1" max="32767" attributes="0"/>
+                                                      <Component id="txtGFindID" max="32767" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jButton11" min="-2" pref="83" max="-2" attributes="0"/>
+                                                      <Component id="btnGSearch" min="-2" pref="83" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -1684,25 +1683,25 @@
                                       <Component id="jLabel22" min="-2" pref="29" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jButton11" pref="29" max="32767" attributes="0"/>
-                                          <Component id="txtFindID1" max="32767" attributes="0"/>
+                                          <Component id="btnGSearch" pref="29" max="32767" attributes="0"/>
+                                          <Component id="txtGFindID" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel39" min="-2" pref="23" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFindID3" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <Component id="txtGFindSemester" min="-2" pref="29" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JTextField" name="txtFindID1">
+                            <Component class="javax.swing.JTextField" name="txtGFindID">
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFindID1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGFindIDActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JButton" name="jButton11">
+                            <Component class="javax.swing.JButton" name="btnGSearch">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
@@ -1710,7 +1709,7 @@
                                 <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGSearchActionPerformed"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel22">
@@ -1724,9 +1723,9 @@
                                 <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="txtFindID3">
+                            <Component class="javax.swing.JTextField" name="txtGFindSemester">
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFindID3ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGFindSemesterActionPerformed"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel39">
@@ -1742,9 +1741,9 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JTextField" name="txtID1">
+                        <Component class="javax.swing.JTextField" name="txtGID">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtID1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGIDActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel23">
@@ -1769,9 +1768,9 @@
                             <Property name="text" type="java.lang.String" value="Student&apos;s ID "/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="txtstudent1">
+                        <Component class="javax.swing.JTextField" name="txtGstudent">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtstudent1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGstudentActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel26">
@@ -1785,7 +1784,7 @@
                             <Property name="text" type="java.lang.String" value="Lecturers"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cbLecturers1">
+                        <Component class="javax.swing.JComboBox" name="cbGLecturers">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1837,7 +1836,7 @@
                             <Property name="text" type="java.lang.String" value="Course 3"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cbC4">
+                        <Component class="javax.swing.JComboBox" name="cbGC1">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1853,13 +1852,13 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbC4ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbGC1ActionPerformed"/>
                           </Events>
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                           </AuxValues>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cbC5">
+                        <Component class="javax.swing.JComboBox" name="cbGC2">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1878,17 +1877,17 @@
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                           </AuxValues>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cbC6">
+                        <Component class="javax.swing.JComboBox" name="cbGC3">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="4">
-                                <StringItem index="0" value="English "/>
-                                <StringItem index="1" value="Academic "/>
-                                <StringItem index="2" value="Buisness Analysis"/>
-                                <StringItem index="3" value=" "/>
+                                <StringItem index="0" value=""/>
+                                <StringItem index="1" value="English"/>
+                                <StringItem index="2" value="Academic"/>
+                                <StringItem index="3" value="Buisness Analysis"/>
                               </StringArray>
                             </Property>
                           </Properties>
@@ -1896,7 +1895,7 @@
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                           </AuxValues>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField2">
+                        <Component class="javax.swing.JTextField" name="txtGS1">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1905,7 +1904,7 @@
                             <Property name="text" type="java.lang.String" value="0.0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField4">
+                        <Component class="javax.swing.JTextField" name="txtGS2">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1914,7 +1913,7 @@
                             <Property name="text" type="java.lang.String" value="0.0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField5">
+                        <Component class="javax.swing.JTextField" name="txtGS3">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1923,7 +1922,7 @@
                             <Property name="text" type="java.lang.String" value="0.0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCreate1">
+                        <Component class="javax.swing.JButton" name="btnGadd">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1931,10 +1930,10 @@
                             <Property name="text" type="java.lang.String" value="Add"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreate1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGaddActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCupdate1">
+                        <Component class="javax.swing.JButton" name="btnGupdate">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1942,10 +1941,10 @@
                             <Property name="text" type="java.lang.String" value="Update"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCupdate1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGupdateActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCupdate3">
+                        <Component class="javax.swing.JButton" name="btnGclear">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1953,10 +1952,10 @@
                             <Property name="text" type="java.lang.String" value="Clear"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCupdate3ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGclearActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCRead1">
+                        <Component class="javax.swing.JButton" name="btnGprint">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -1964,7 +1963,7 @@
                             <Property name="text" type="java.lang.String" value="Print"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCRead1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGprintActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
@@ -2155,7 +2154,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
+                            <LineBorder roundedCorners="true"/>
                           </Border>
                         </Property>
                       </Properties>
@@ -2170,20 +2169,20 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace pref="127" max="32767" attributes="0"/>
-                                          <Component id="txtstudent2" min="-2" pref="300" max="-2" attributes="0"/>
+                                          <Component id="txtAstudent" min="-2" pref="300" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                          <Component id="btnCreate2" min="-2" pref="104" max="-2" attributes="0"/>
+                                          <Component id="btnAadd" min="-2" pref="104" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="btnCRead2" min="-2" pref="104" max="-2" attributes="0"/>
+                                          <Component id="btnAprint" min="-2" pref="104" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="btnCupdate2" min="-2" pref="104" max="-2" attributes="0"/>
+                                          <Component id="btnAclear" min="-2" pref="104" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel32" min="-2" pref="52" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="txtID2" min="-2" pref="300" max="-2" attributes="0"/>
+                                          <Component id="txtAID" min="-2" pref="300" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2198,18 +2197,18 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtID2" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="txtAID" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel33" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="txtstudent2" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="txtAstudent" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="btnCreate2" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="btnCRead2" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="btnCupdate2" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnAadd" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnAprint" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="btnAclear" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace pref="15" max="32767" attributes="0"/>
                               </Group>
@@ -2238,9 +2237,9 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="txtFindID2" max="32767" attributes="0"/>
+                                              <Component id="txtAFindStudentID" max="32767" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jButton14" min="-2" pref="89" max="-2" attributes="0"/>
+                                              <Component id="btnAsearch" min="-2" pref="89" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
@@ -2258,8 +2257,8 @@
                                       <Component id="jLabel31" pref="18" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="txtFindID2" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Component id="jButton14" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="txtAFindStudentID" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="btnAsearch" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
@@ -2267,12 +2266,12 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JTextField" name="txtFindID2">
+                            <Component class="javax.swing.JTextField" name="txtAFindStudentID">
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFindID2ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAFindStudentIDActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JButton" name="jButton14">
+                            <Component class="javax.swing.JButton" name="btnAsearch">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
@@ -2280,7 +2279,7 @@
                                 <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton14ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAsearchActionPerformed"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel31">
@@ -2296,9 +2295,9 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JTextField" name="txtID2">
+                        <Component class="javax.swing.JTextField" name="txtAID">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtID2ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAIDActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel32">
@@ -2323,12 +2322,12 @@
                             <Property name="text" type="java.lang.String" value="Student "/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="txtstudent2">
+                        <Component class="javax.swing.JTextField" name="txtAstudent">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtstudent2ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAstudentActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCreate2">
+                        <Component class="javax.swing.JButton" name="btnAadd">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -2336,10 +2335,10 @@
                             <Property name="text" type="java.lang.String" value="Add"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreate2ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAaddActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCRead2">
+                        <Component class="javax.swing.JButton" name="btnAprint">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -2347,10 +2346,10 @@
                             <Property name="text" type="java.lang.String" value="Print"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCRead2ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAprintActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnCupdate2">
+                        <Component class="javax.swing.JButton" name="btnAclear">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
@@ -2358,7 +2357,7 @@
                             <Property name="text" type="java.lang.String" value="Clear"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCupdate2ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAclearActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>

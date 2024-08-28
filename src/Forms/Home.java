@@ -81,26 +81,26 @@ public class Home extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
         jPanel15 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
-        txtFindID = new javax.swing.JTextField();
-        jButton8 = new javax.swing.JButton();
+        txtCFindID = new javax.swing.JTextField();
+        btnCsearch = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        txtID = new javax.swing.JTextField();
+        txtCID = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        txtstudent = new javax.swing.JTextField();
+        txtCstudentID = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        cbSemester = new javax.swing.JComboBox<>();
+        cbCSemester = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        cbLecturers = new javax.swing.JComboBox<>();
+        cbCLecturers = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         cbC1 = new javax.swing.JComboBox<>();
         cbC2 = new javax.swing.JComboBox<>();
         cbC3 = new javax.swing.JComboBox<>();
-        btnCreate = new javax.swing.JButton();
-        btnCRead = new javax.swing.JButton();
-        btnCupdate = new javax.swing.JButton();
+        btnCAdd = new javax.swing.JButton();
+        btnCPrint = new javax.swing.JButton();
+        btnCClear = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
@@ -108,30 +108,30 @@ public class Home extends javax.swing.JFrame {
         jTable3 = new javax.swing.JTable();
         jPanel20 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
-        txtFindID1 = new javax.swing.JTextField();
-        jButton11 = new javax.swing.JButton();
+        txtGFindID = new javax.swing.JTextField();
+        btnGSearch = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
-        txtFindID3 = new javax.swing.JTextField();
+        txtGFindSemester = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
-        txtID1 = new javax.swing.JTextField();
+        txtGID = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        txtstudent1 = new javax.swing.JTextField();
+        txtGstudent = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
-        cbLecturers1 = new javax.swing.JComboBox<>();
+        cbGLecturers = new javax.swing.JComboBox<>();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        cbC4 = new javax.swing.JComboBox<>();
-        cbC5 = new javax.swing.JComboBox<>();
-        cbC6 = new javax.swing.JComboBox<>();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        btnCreate1 = new javax.swing.JButton();
-        btnCupdate1 = new javax.swing.JButton();
-        btnCupdate3 = new javax.swing.JButton();
-        btnCRead1 = new javax.swing.JButton();
+        cbGC1 = new javax.swing.JComboBox<>();
+        cbGC2 = new javax.swing.JComboBox<>();
+        cbGC3 = new javax.swing.JComboBox<>();
+        txtGS1 = new javax.swing.JTextField();
+        txtGS2 = new javax.swing.JTextField();
+        txtGS3 = new javax.swing.JTextField();
+        btnGadd = new javax.swing.JButton();
+        btnGupdate = new javax.swing.JButton();
+        btnGclear = new javax.swing.JButton();
+        btnGprint = new javax.swing.JButton();
         jPanel22 = new javax.swing.JPanel();
         jPanel23 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
@@ -139,16 +139,16 @@ public class Home extends javax.swing.JFrame {
         jTable4 = new javax.swing.JTable();
         jPanel26 = new javax.swing.JPanel();
         jPanel27 = new javax.swing.JPanel();
-        txtFindID2 = new javax.swing.JTextField();
-        jButton14 = new javax.swing.JButton();
+        txtAFindStudentID = new javax.swing.JTextField();
+        btnAsearch = new javax.swing.JButton();
         jLabel31 = new javax.swing.JLabel();
-        txtID2 = new javax.swing.JTextField();
+        txtAID = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        txtstudent2 = new javax.swing.JTextField();
-        btnCreate2 = new javax.swing.JButton();
-        btnCRead2 = new javax.swing.JButton();
-        btnCupdate2 = new javax.swing.JButton();
+        txtAstudent = new javax.swing.JTextField();
+        btnAadd = new javax.swing.JButton();
+        btnAprint = new javax.swing.JButton();
+        btnAclear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 204, 204));
@@ -184,7 +184,7 @@ public class Home extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jPanel9.setBackground(java.awt.SystemColor.controlLtHighlight);
-        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         txtStudentID.setEditable(false);
         txtStudentID.addActionListener(new java.awt.event.ActionListener() {
@@ -427,7 +427,7 @@ public class Home extends javax.swing.JFrame {
         jPanel11.setBackground(new java.awt.Color(153, 153, 153));
         jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
 
-        Tstudent.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Tstudent.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         Tstudent.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -513,11 +513,11 @@ public class Home extends javax.swing.JFrame {
         jPanel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jPanel12.setBackground(java.awt.SystemColor.controlLtHighlight);
-        jPanel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
 
         jScrollPane2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jTable2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTable2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -554,22 +554,22 @@ public class Home extends javax.swing.JFrame {
         );
 
         jPanel15.setBackground(java.awt.SystemColor.controlLtHighlight);
-        jPanel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jPanel8.setBackground(java.awt.SystemColor.controlHighlight);
         jPanel8.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
 
-        txtFindID.addActionListener(new java.awt.event.ActionListener() {
+        txtCFindID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFindIDActionPerformed(evt);
+                txtCFindIDActionPerformed(evt);
             }
         });
 
-        jButton8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton8.setText("Search");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btnCsearch.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCsearch.setText("Search");
+        btnCsearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btnCsearchActionPerformed(evt);
             }
         });
 
@@ -585,9 +585,9 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(txtFindID)
+                        .addComponent(txtCFindID)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnCsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -600,14 +600,14 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtFindID, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCFindID, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
-        txtID.addActionListener(new java.awt.event.ActionListener() {
+        txtCID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIDActionPerformed(evt);
+                txtCIDActionPerformed(evt);
             }
         });
 
@@ -619,9 +619,9 @@ public class Home extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel13.setText("Student's ID");
 
-        txtstudent.addActionListener(new java.awt.event.ActionListener() {
+        txtCstudentID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtstudentActionPerformed(evt);
+                txtCstudentIDActionPerformed(evt);
             }
         });
 
@@ -629,11 +629,11 @@ public class Home extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel18.setText("Semester ");
 
-        cbSemester.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cbSemester.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "1", "2", "" }));
-        cbSemester.addActionListener(new java.awt.event.ActionListener() {
+        cbCSemester.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbCSemester.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "1", "2" }));
+        cbCSemester.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbSemesterActionPerformed(evt);
+                cbCSemesterActionPerformed(evt);
             }
         });
 
@@ -641,8 +641,8 @@ public class Home extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel14.setText("Lecturers");
 
-        cbLecturers.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cbLecturers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Bunchhun chhim", "Sovila Srun", "Jonny sin", "Bob" }));
+        cbCLecturers.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbCLecturers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Bunchhun chhim", "Sovila Srun", "Jonny sin", "Bob" }));
 
         jLabel15.setBackground(new java.awt.Color(255, 255, 255));
         jLabel15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -670,27 +670,27 @@ public class Home extends javax.swing.JFrame {
         cbC3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         cbC3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "English", "Academic", "Buisness Analysis", "" }));
 
-        btnCreate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCreate.setText("Add");
-        btnCreate.addActionListener(new java.awt.event.ActionListener() {
+        btnCAdd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCAdd.setText("Add");
+        btnCAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreateActionPerformed(evt);
+                btnCAddActionPerformed(evt);
             }
         });
 
-        btnCRead.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCRead.setText("Print");
-        btnCRead.addActionListener(new java.awt.event.ActionListener() {
+        btnCPrint.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCPrint.setText("Print");
+        btnCPrint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCReadActionPerformed(evt);
+                btnCPrintActionPerformed(evt);
             }
         });
 
-        btnCupdate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCupdate.setText("Clear");
-        btnCupdate.addActionListener(new java.awt.event.ActionListener() {
+        btnCClear.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCClear.setText("Clear");
+        btnCClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCupdateActionPerformed(evt);
+                btnCClearActionPerformed(evt);
             }
         });
 
@@ -705,15 +705,15 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtCID, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
-                        .addComponent(txtstudent, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtCstudentID, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel18)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cbSemester, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(cbCSemester, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel19)
@@ -728,18 +728,18 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel14)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cbLecturers, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(cbCLecturers, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel20)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cbC3, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnCRead, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCPrint, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnCupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnCClear, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
@@ -750,19 +750,19 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCID, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtstudent, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCstudentID, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
-                    .addComponent(cbSemester, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbCSemester, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(cbLecturers, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbCLecturers, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19)
@@ -777,9 +777,9 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(cbC3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCRead, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnCAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCPrint, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCClear, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -859,22 +859,22 @@ public class Home extends javax.swing.JFrame {
         );
 
         jPanel20.setBackground(java.awt.SystemColor.controlLtHighlight);
-        jPanel20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jPanel21.setBackground(java.awt.SystemColor.controlHighlight);
         jPanel21.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
 
-        txtFindID1.addActionListener(new java.awt.event.ActionListener() {
+        txtGFindID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFindID1ActionPerformed(evt);
+                txtGFindIDActionPerformed(evt);
             }
         });
 
-        jButton11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton11.setText("Search");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btnGSearch.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGSearch.setText("Search");
+        btnGSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btnGSearchActionPerformed(evt);
             }
         });
 
@@ -882,9 +882,9 @@ public class Home extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel22.setText("Student's ID");
 
-        txtFindID3.addActionListener(new java.awt.event.ActionListener() {
+        txtGFindSemester.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFindID3ActionPerformed(evt);
+                txtGFindSemesterActionPerformed(evt);
             }
         });
 
@@ -907,11 +907,11 @@ public class Home extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtFindID3)
+                            .addComponent(txtGFindSemester)
                             .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addComponent(txtFindID1)
+                                .addComponent(txtGFindID)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnGSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(10, 10, 10))))
         );
         jPanel21Layout.setVerticalGroup(
@@ -920,18 +920,18 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
-                    .addComponent(txtFindID1))
+                    .addComponent(btnGSearch, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                    .addComponent(txtGFindID))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtFindID3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtGFindSemester, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
 
-        txtID1.addActionListener(new java.awt.event.ActionListener() {
+        txtGID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtID1ActionPerformed(evt);
+                txtGIDActionPerformed(evt);
             }
         });
 
@@ -943,9 +943,9 @@ public class Home extends javax.swing.JFrame {
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel24.setText("Student's ID ");
 
-        txtstudent1.addActionListener(new java.awt.event.ActionListener() {
+        txtGstudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtstudent1ActionPerformed(evt);
+                txtGstudentActionPerformed(evt);
             }
         });
 
@@ -953,8 +953,8 @@ public class Home extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel26.setText("Lecturers");
 
-        cbLecturers1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cbLecturers1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Bunchhun chhim", "Sovila Srun", "Jonny sin", "Bob" }));
+        cbGLecturers.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbGLecturers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Bunchhun chhim", "Sovila Srun", "Jonny sin", "Bob" }));
 
         jLabel27.setBackground(new java.awt.Color(255, 255, 255));
         jLabel27.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -968,61 +968,61 @@ public class Home extends javax.swing.JFrame {
         jLabel29.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel29.setText("Course 3");
 
-        cbC4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cbC4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "UX/UI", "Software Engineer", "Network", "Data Mining" }));
-        cbC4.addActionListener(new java.awt.event.ActionListener() {
+        cbGC1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbGC1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "UX/UI", "Software Engineer", "Network", "Data Mining" }));
+        cbGC1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbC4ActionPerformed(evt);
+                cbGC1ActionPerformed(evt);
             }
         });
 
-        cbC5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cbC5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "BIg Data", "R program", "Discrete Math", "" }));
+        cbGC2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbGC2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "BIg Data", "R program", "Discrete Math", "" }));
 
-        cbC6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cbC6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "English ", "Academic ", "Buisness Analysis", " " }));
+        cbGC3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbGC3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "English", "Academic", "Buisness Analysis" }));
 
-        jTextField2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setText("0.0");
+        txtGS1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtGS1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtGS1.setText("0.0");
 
-        jTextField4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setText("0.0");
+        txtGS2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtGS2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtGS2.setText("0.0");
 
-        jTextField5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setText("0.0");
+        txtGS3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtGS3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtGS3.setText("0.0");
 
-        btnCreate1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCreate1.setText("Add");
-        btnCreate1.addActionListener(new java.awt.event.ActionListener() {
+        btnGadd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGadd.setText("Add");
+        btnGadd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreate1ActionPerformed(evt);
+                btnGaddActionPerformed(evt);
             }
         });
 
-        btnCupdate1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCupdate1.setText("Update");
-        btnCupdate1.addActionListener(new java.awt.event.ActionListener() {
+        btnGupdate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGupdate.setText("Update");
+        btnGupdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCupdate1ActionPerformed(evt);
+                btnGupdateActionPerformed(evt);
             }
         });
 
-        btnCupdate3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCupdate3.setText("Clear");
-        btnCupdate3.addActionListener(new java.awt.event.ActionListener() {
+        btnGclear.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGclear.setText("Clear");
+        btnGclear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCupdate3ActionPerformed(evt);
+                btnGclearActionPerformed(evt);
             }
         });
 
-        btnCRead1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCRead1.setText("Print");
-        btnCRead1.addActionListener(new java.awt.event.ActionListener() {
+        btnGprint.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGprint.setText("Print");
+        btnGprint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCRead1ActionPerformed(evt);
+                btnGprintActionPerformed(evt);
             }
         });
 
@@ -1034,20 +1034,6 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtID1, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(91, 91, 91)
-                        .addComponent(txtstudent1)
-                        .addContainerGap())
-                    .addGroup(jPanel20Layout.createSequentialGroup()
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel28)
@@ -1056,32 +1042,45 @@ public class Home extends javax.swing.JFrame {
                         .addGap(91, 91, 91)
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel20Layout.createSequentialGroup()
-                                .addComponent(cbLecturers1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cbGLecturers, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addContainerGap())
                             .addGroup(jPanel20Layout.createSequentialGroup()
                                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel20Layout.createSequentialGroup()
-                                        .addComponent(cbC6, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cbGC3, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtGS3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel20Layout.createSequentialGroup()
-                                        .addComponent(cbC5, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cbGC2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtGS2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel20Layout.createSequentialGroup()
-                                        .addComponent(cbC4, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cbGC1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 6, Short.MAX_VALUE))))))
+                                        .addComponent(txtGS1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 6, Short.MAX_VALUE))))
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
+                                .addGap(7, 7, 7)
+                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtGID, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel20Layout.createSequentialGroup()
+                                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(91, 91, 91)
+                                .addComponent(txtGstudent)))
+                        .addContainerGap())))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnCreate1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnGadd, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCupdate1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnGupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCupdate3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnGclear, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCRead1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnGprint, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel20Layout.setVerticalGroup(
@@ -1092,39 +1091,39 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
-                    .addComponent(txtID1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtGID, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtstudent1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtGstudent, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
-                    .addComponent(cbLecturers1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbGLecturers, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel28)
                     .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cbC4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cbGC1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtGS1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel27)
                     .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cbC5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cbGC2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtGS2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cbC6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cbGC3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtGS3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreate1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCupdate1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCupdate3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCRead1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnGadd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGclear, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGprint, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1201,22 +1200,22 @@ public class Home extends javax.swing.JFrame {
         );
 
         jPanel26.setBackground(java.awt.SystemColor.controlLtHighlight);
-        jPanel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jPanel27.setBackground(java.awt.SystemColor.controlHighlight);
         jPanel27.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
 
-        txtFindID2.addActionListener(new java.awt.event.ActionListener() {
+        txtAFindStudentID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFindID2ActionPerformed(evt);
+                txtAFindStudentIDActionPerformed(evt);
             }
         });
 
-        jButton14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton14.setText("Search");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        btnAsearch.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAsearch.setText("Search");
+        btnAsearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                btnAsearchActionPerformed(evt);
             }
         });
 
@@ -1232,9 +1231,9 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel27Layout.createSequentialGroup()
-                        .addComponent(txtFindID2)
+                        .addComponent(txtAFindStudentID)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnAsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel27Layout.createSequentialGroup()
                         .addComponent(jLabel31)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -1247,14 +1246,14 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtFindID2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAFindStudentID, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        txtID2.addActionListener(new java.awt.event.ActionListener() {
+        txtAID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtID2ActionPerformed(evt);
+                txtAIDActionPerformed(evt);
             }
         });
 
@@ -1266,33 +1265,33 @@ public class Home extends javax.swing.JFrame {
         jLabel33.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel33.setText("Student ");
 
-        txtstudent2.addActionListener(new java.awt.event.ActionListener() {
+        txtAstudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtstudent2ActionPerformed(evt);
+                txtAstudentActionPerformed(evt);
             }
         });
 
-        btnCreate2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCreate2.setText("Add");
-        btnCreate2.addActionListener(new java.awt.event.ActionListener() {
+        btnAadd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAadd.setText("Add");
+        btnAadd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreate2ActionPerformed(evt);
+                btnAaddActionPerformed(evt);
             }
         });
 
-        btnCRead2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCRead2.setText("Print");
-        btnCRead2.addActionListener(new java.awt.event.ActionListener() {
+        btnAprint.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAprint.setText("Print");
+        btnAprint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCRead2ActionPerformed(evt);
+                btnAprintActionPerformed(evt);
             }
         });
 
-        btnCupdate2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnCupdate2.setText("Clear");
-        btnCupdate2.addActionListener(new java.awt.event.ActionListener() {
+        btnAclear.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAclear.setText("Clear");
+        btnAclear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCupdate2ActionPerformed(evt);
+                btnAclearActionPerformed(evt);
             }
         });
 
@@ -1307,18 +1306,18 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
                         .addComponent(jLabel33)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
-                        .addComponent(txtstudent2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtAstudent, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnCreate2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAadd, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnCRead2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAprint, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnCupdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnAclear, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel26Layout.createSequentialGroup()
                         .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtID2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtAID, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel26Layout.setVerticalGroup(
@@ -1329,16 +1328,16 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32)
-                    .addComponent(txtID2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAID, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtstudent2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAstudent, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreate2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCRead2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCupdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnAadd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAprint, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAclear, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -1523,29 +1522,29 @@ public class Home extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnUpdateActionPerformed
 
-    private void txtFindIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindIDActionPerformed
+    private void txtCFindIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCFindIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFindIDActionPerformed
+    }//GEN-LAST:event_txtCFindIDActionPerformed
 
-    private void btnCReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCReadActionPerformed
+    private void btnCPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCPrintActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCReadActionPerformed
+    }//GEN-LAST:event_btnCPrintActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void btnCsearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsearchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_btnCsearchActionPerformed
 
-    private void btnCupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCupdateActionPerformed
+    private void btnCClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCClearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCupdateActionPerformed
+    }//GEN-LAST:event_btnCClearActionPerformed
 
-    private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
+    private void btnCAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCAddActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreateActionPerformed
+    }//GEN-LAST:event_btnCAddActionPerformed
 
-    private void txtIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIDActionPerformed
+    private void txtCIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtIDActionPerformed
+    }//GEN-LAST:event_txtCIDActionPerformed
 
     private void cbC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbC1ActionPerformed
         // TODO add your handling code here:
@@ -1555,9 +1554,9 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtHaddressActionPerformed
 
-    private void cbSemesterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbSemesterActionPerformed
+    private void cbCSemesterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCSemesterActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cbSemesterActionPerformed
+    }//GEN-LAST:event_cbCSemesterActionPerformed
 
     private void jLabel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseDragged
 
@@ -1624,77 +1623,77 @@ public class Home extends javax.swing.JFrame {
         jTextField7.setText(null);
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void txtstudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtstudentActionPerformed
+    private void txtCstudentIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCstudentIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtstudentActionPerformed
+    }//GEN-LAST:event_txtCstudentIDActionPerformed
 
-    private void txtFindID1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindID1ActionPerformed
+    private void txtGFindIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGFindIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFindID1ActionPerformed
+    }//GEN-LAST:event_txtGFindIDActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void btnGSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGSearchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_btnGSearchActionPerformed
 
-    private void txtID1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtID1ActionPerformed
+    private void txtGIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtID1ActionPerformed
+    }//GEN-LAST:event_txtGIDActionPerformed
 
-    private void txtstudent1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtstudent1ActionPerformed
+    private void txtGstudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGstudentActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtstudent1ActionPerformed
+    }//GEN-LAST:event_txtGstudentActionPerformed
 
-    private void cbC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbC4ActionPerformed
+    private void cbGC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbGC1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cbC4ActionPerformed
+    }//GEN-LAST:event_cbGC1ActionPerformed
 
-    private void btnCreate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreate1ActionPerformed
+    private void btnGaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGaddActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreate1ActionPerformed
+    }//GEN-LAST:event_btnGaddActionPerformed
 
-    private void btnCRead1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCRead1ActionPerformed
+    private void btnGprintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGprintActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCRead1ActionPerformed
+    }//GEN-LAST:event_btnGprintActionPerformed
 
-    private void btnCupdate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCupdate1ActionPerformed
+    private void btnGupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGupdateActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCupdate1ActionPerformed
+    }//GEN-LAST:event_btnGupdateActionPerformed
 
-    private void btnCreate2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreate2ActionPerformed
+    private void btnAaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAaddActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreate2ActionPerformed
+    }//GEN-LAST:event_btnAaddActionPerformed
 
-    private void btnCRead2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCRead2ActionPerformed
+    private void btnAprintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAprintActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCRead2ActionPerformed
+    }//GEN-LAST:event_btnAprintActionPerformed
 
-    private void btnCupdate2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCupdate2ActionPerformed
+    private void btnAclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAclearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCupdate2ActionPerformed
+    }//GEN-LAST:event_btnAclearActionPerformed
 
-    private void txtFindID3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindID3ActionPerformed
+    private void txtGFindSemesterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGFindSemesterActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFindID3ActionPerformed
+    }//GEN-LAST:event_txtGFindSemesterActionPerformed
 
-    private void btnCupdate3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCupdate3ActionPerformed
+    private void btnGclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGclearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCupdate3ActionPerformed
+    }//GEN-LAST:event_btnGclearActionPerformed
 
-    private void txtstudent2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtstudent2ActionPerformed
+    private void txtAstudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAstudentActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtstudent2ActionPerformed
+    }//GEN-LAST:event_txtAstudentActionPerformed
 
-    private void txtID2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtID2ActionPerformed
+    private void txtAIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtID2ActionPerformed
+    }//GEN-LAST:event_txtAIDActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void btnAsearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsearchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_btnAsearchActionPerformed
 
-    private void txtFindID2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindID2ActionPerformed
+    private void txtAFindStudentIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAFindStudentIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFindID2ActionPerformed
+    }//GEN-LAST:event_txtAFindStudentIDActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1745,35 +1744,35 @@ public class Home extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser DOB;
     private javax.swing.JLabel Pname;
     private javax.swing.JTable Tstudent;
+    private javax.swing.JButton btnAadd;
+    private javax.swing.JButton btnAclear;
     private javax.swing.JButton btnAdd;
-    private javax.swing.JButton btnCRead;
-    private javax.swing.JButton btnCRead1;
-    private javax.swing.JButton btnCRead2;
+    private javax.swing.JButton btnAprint;
+    private javax.swing.JButton btnAsearch;
+    private javax.swing.JButton btnCAdd;
+    private javax.swing.JButton btnCClear;
+    private javax.swing.JButton btnCPrint;
     private javax.swing.JButton btnClear;
-    private javax.swing.JButton btnCreate;
-    private javax.swing.JButton btnCreate1;
-    private javax.swing.JButton btnCreate2;
-    private javax.swing.JButton btnCupdate;
-    private javax.swing.JButton btnCupdate1;
-    private javax.swing.JButton btnCupdate2;
-    private javax.swing.JButton btnCupdate3;
+    private javax.swing.JButton btnCsearch;
     private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnGSearch;
+    private javax.swing.JButton btnGadd;
+    private javax.swing.JButton btnGclear;
+    private javax.swing.JButton btnGprint;
+    private javax.swing.JButton btnGupdate;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JComboBox<String> cbC1;
     private javax.swing.JComboBox<String> cbC2;
     private javax.swing.JComboBox<String> cbC3;
-    private javax.swing.JComboBox<String> cbC4;
-    private javax.swing.JComboBox<String> cbC5;
-    private javax.swing.JComboBox<String> cbC6;
-    private javax.swing.JComboBox<String> cbLecturers;
-    private javax.swing.JComboBox<String> cbLecturers1;
-    private javax.swing.JComboBox<String> cbSemester;
+    private javax.swing.JComboBox<String> cbCLecturers;
+    private javax.swing.JComboBox<String> cbCSemester;
+    private javax.swing.JComboBox<String> cbGC1;
+    private javax.swing.JComboBox<String> cbGC2;
+    private javax.swing.JComboBox<String> cbGC3;
+    private javax.swing.JComboBox<String> cbGLecturers;
     private javax.swing.JComboBox<String> cbgender;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -1824,9 +1823,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JLabel lblDOB;
     private javax.swing.JLabel lblHaddress;
@@ -1835,20 +1831,23 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lblSname;
     private javax.swing.JLabel lblgender;
     private java.awt.ScrollPane scrollPane1;
-    private javax.swing.JTextField txtFindID;
-    private javax.swing.JTextField txtFindID1;
-    private javax.swing.JTextField txtFindID2;
-    private javax.swing.JTextField txtFindID3;
+    private javax.swing.JTextField txtAFindStudentID;
+    private javax.swing.JTextField txtAID;
+    private javax.swing.JTextField txtAstudent;
+    private javax.swing.JTextField txtCFindID;
+    private javax.swing.JTextField txtCID;
+    private javax.swing.JTextField txtCstudentID;
+    private javax.swing.JTextField txtGFindID;
+    private javax.swing.JTextField txtGFindSemester;
+    private javax.swing.JTextField txtGID;
+    private javax.swing.JTextField txtGS1;
+    private javax.swing.JTextField txtGS2;
+    private javax.swing.JTextField txtGS3;
+    private javax.swing.JTextField txtGstudent;
     private javax.swing.JTextField txtHaddress;
-    private javax.swing.JTextField txtID;
-    private javax.swing.JTextField txtID1;
-    private javax.swing.JTextField txtID2;
     private javax.swing.JTextField txtPName;
     private javax.swing.JTextField txtPNumber;
     private javax.swing.JTextField txtStudentID;
     private javax.swing.JTextField txtStudentName;
-    private javax.swing.JTextField txtstudent;
-    private javax.swing.JTextField txtstudent1;
-    private javax.swing.JTextField txtstudent2;
     // End of variables declaration//GEN-END:variables
 }
