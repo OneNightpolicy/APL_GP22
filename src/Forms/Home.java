@@ -14,6 +14,7 @@ import java.awt.Color;
 import java.awt.print.PrinterException;
 import java.sql.Connection;
 import java.text.MessageFormat;
+import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -35,7 +36,7 @@ public class Home extends javax.swing.JFrame {
 
     private DefaultTableModel model;
     private int rowIndex;
-
+    NumberFormat nf = NumberFormat.getInstance();
     public Home() {
         initComponents();
         init();
@@ -912,9 +913,17 @@ public class Home extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Student ID", "Semester", "Course 1", "Course 2", "Course 3"
+                "ID", "Student ID", "Semester", "Course 1", "Score 1", "Course 2", "Score 2", "Course 3", "Score 3", "Average"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane3.setViewportView(TScore);
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -1660,6 +1669,7 @@ public class Home extends javax.swing.JFrame {
     public void init() {
         tableViewStudent();
         tableCourse();
+        tableViewScore();
         txtStudentID.setText(String.valueOf(student.getMax()));
         txtCID.setText(String.valueOf(course.getMax()));
         txtGID.setText(String.valueOf(score.getMax()));
@@ -1681,6 +1691,15 @@ public class Home extends javax.swing.JFrame {
         Tstudent.setShowGrid(true);
         Tstudent.setGridColor(Color.black);
         Tstudent.setBackground(Color.white);
+    }
+    
+    private void tableViewScore() {
+        score.getScoreValue(TScore, "");
+        model = (DefaultTableModel) TScore.getModel();
+        TScore.setRowHeight(30);
+        TScore.setShowGrid(true);
+        TScore.setGridColor(Color.black);
+        TScore.setBackground(Color.white);
     }
 
     private void clearStudent() {
@@ -1985,9 +2004,53 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_txtGstudentActionPerformed
 
     private void btnGaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGaddActionPerformed
-        // TODO add your handling code here:
+        if(!txtGstudent.getText().isEmpty()){
+            if(!score.isIDExist(Integer.parseInt(txtGID.getText()))){
+                int sid = Integer.parseInt(txtGstudent.getText());
+                int semesterNO = Integer.parseInt(txtGSemester.getText());
+                if(!score.isSidSemesterNOExist(sid, semesterNO)){
+                    if(isNumeric(txtGS1.getText()) && isNumeric(txtGS2.getText()) && isNumeric(txtGS3.getText())){
+                        int id = score.getMax();
+                        String course1 = txtGC1.getText();
+                        String course2 = txtGC2.getText();
+                        String course3 = txtGC3.getText();
+                        double score1 = Double.parseDouble(txtGS1.getText());
+                        double score2 = Double.parseDouble(txtGS2.getText());
+                        double score3 = Double.parseDouble(txtGS3.getText());
+                        double average = (score1 + score2 + score3)/3;
+                        nf.setMaximumFractionDigits(2);
+                        score.insert(id, sid, semesterNO, course1, course2, course3, score1, score2, score3, Double.parseDouble(nf.format(average)));
+                        TScore.setModel(new DefaultTableModel(null, new Object[]{"ID", "Student ID", "Semester", "Course 1","Score 1", "Course 2","score 2", "Course 3", "Score 3","Average"}));
+                            score.getScoreValue(TScore, "");
+                            clearScore();
+                        
+                    }
+                }else{
+                    JOptionPane.showMessageDialog(this, "Semester " + semesterNO + "score already added" );
+                }
+            }else{
+               JOptionPane.showMessageDialog(this, "score id already exists"); 
+            }
+        }else{
+            JOptionPane.showMessageDialog(this, "NO Student selected");
+        }
     }//GEN-LAST:event_btnGaddActionPerformed
-
+       
+    
+    private boolean isNumeric(String s){
+        try{
+           double d = Double.parseDouble(s);
+           if(d>=0.0 && d <=4.0){
+               return true;
+           }else{
+               JOptionPane.showMessageDialog(this, "Please enter a valid value between 0.0 to 4.0 ");
+               return false;
+           }
+        }catch(NumberFormatException e){
+                JOptionPane.showMessageDialog(this, ""+e);
+        }
+        return false;
+    }
     private void btnGprintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGprintActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGprintActionPerformed
