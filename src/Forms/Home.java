@@ -924,6 +924,16 @@ public class Home extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        TScore.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TScoreMouseClicked(evt);
+            }
+        });
+        TScore.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                TScoreKeyPressed(evt);
+            }
+        });
         jScrollPane3.setViewportView(TScore);
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -2021,8 +2031,8 @@ public class Home extends javax.swing.JFrame {
                         nf.setMaximumFractionDigits(2);
                         score.insert(id, sid, semesterNO, course1, course2, course3, score1, score2, score3, Double.parseDouble(nf.format(average)));
                         TScore.setModel(new DefaultTableModel(null, new Object[]{"ID", "Student ID", "Semester", "Course 1","Score 1", "Course 2","score 2", "Course 3", "Score 3","Average"}));
-                            score.getScoreValue(TScore, "");
-                            clearScore();
+                        score.getScoreValue(TScore, "");
+                        clearScore();
                         
                     }
                 }else{
@@ -2052,11 +2062,31 @@ public class Home extends javax.swing.JFrame {
         return false;
     }
     private void btnGprintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGprintActionPerformed
-        // TODO add your handling code here:
+        try {
+            MessageFormat header = new MessageFormat("Students Score Information");
+            MessageFormat footer = new MessageFormat("Page(0.number,integer)");
+            TScore.print(JTable.PrintMode.FIT_WIDTH, header, footer);
+        } catch (PrinterException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_btnGprintActionPerformed
 
     private void btnGupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGupdateActionPerformed
-        // TODO add your handling code here:
+           int id = Integer.parseInt(txtGID.getText());
+           if(score.isIDExist(id)){
+                double score1 = Double.parseDouble(txtGS1.getText());
+                double score2 = Double.parseDouble(txtGS2.getText());
+                double score3 = Double.parseDouble(txtGS3.getText());
+                double average = (score1 + score2 + score3)/3;
+                nf.setMaximumFractionDigits(2);
+                score.update(id, score1, score2, score3, Double.parseDouble(nf.format(average)));
+                TScore.setModel(new DefaultTableModel(null, new Object[]{"ID", "Student ID", "Semester", "Course 1","Score 1", "Course 2","score 2", "Course 3", "Score 3","Average"}));
+                        score.getScoreValue(TScore, "");
+                        clearScore();
+                
+           }else{
+               JOptionPane.showMessageDialog(this, "This id doesn't exist");
+           }
     }//GEN-LAST:event_btnGupdateActionPerformed
 
     private void btnAaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAaddActionPerformed
@@ -2127,11 +2157,18 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
+        TScore.setModel(new DefaultTableModel(null, new Object[]{"ID", "Student ID", "Semester", "Course 1","Score 1", "Course 2","score 2", "Course 3", "Score 3","Average"}));
+        score.getScoreValue(TScore,"");
+        jTextField9.setText(null);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
+         if (jTextField9.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "please enter a student id");
+        } else {
+            TScore.setModel(new DefaultTableModel(null, new Object[]{"ID", "Student ID", "Semester", "Course 1","Score 1", "Course 2","score 2", "Course 3", "Score 3","Average"}));
+            score.getScoreValue(TScore, jTextField9.getText());
+        }
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -2181,6 +2218,24 @@ public class Home extends javax.swing.JFrame {
     private void txtGSemesterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGSemesterActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtGSemesterActionPerformed
+
+    private void TScoreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TScoreKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TScoreKeyPressed
+
+    private void TScoreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TScoreMouseClicked
+        model = (DefaultTableModel) TScore.getModel();
+        rowIndex = TScore.getSelectedRow();
+        txtGID.setText(model.getValueAt(rowIndex, 0).toString());
+        txtGstudent.setText(model.getValueAt(rowIndex, 1).toString());
+        txtGSemester.setText(model.getValueAt(rowIndex, 2).toString());
+        txtGC1.setText(model.getValueAt(rowIndex, 3).toString());
+        txtGS1.setText(model.getValueAt(rowIndex, 4).toString());
+        txtGC2.setText(model.getValueAt(rowIndex, 5).toString());
+        txtGS2.setText(model.getValueAt(rowIndex, 6).toString());
+        txtGC3.setText(model.getValueAt(rowIndex, 7).toString());
+        txtGS3.setText(model.getValueAt(rowIndex, 8).toString());
+    }//GEN-LAST:event_TScoreMouseClicked
 
     /**
      * @param args the command line arguments
