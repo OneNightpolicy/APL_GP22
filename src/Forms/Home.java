@@ -188,11 +188,11 @@ public class Home extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Student Information system ");
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Student Information system ");
         jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 jLabel2MouseDragged(evt);
@@ -229,33 +229,33 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        lblSID.setText("Student's ID :");
         lblSID.setBackground(new java.awt.Color(255, 255, 255));
         lblSID.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblSID.setText("Student's ID :");
 
-        lblSname.setText("Student's Name :");
         lblSname.setBackground(new java.awt.Color(255, 255, 255));
         lblSname.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblSname.setText("Student's Name :");
 
-        lblDOB.setText("Date of Birth :");
         lblDOB.setBackground(new java.awt.Color(255, 255, 255));
         lblDOB.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblDOB.setText("Date of Birth :");
 
-        lblgender.setText("Gender :");
         lblgender.setBackground(new java.awt.Color(255, 255, 255));
         lblgender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblgender.setText("Gender :");
 
-        lblPnumber.setText("Parent Number :");
         lblPnumber.setBackground(new java.awt.Color(255, 255, 255));
         lblPnumber.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblPnumber.setText("Parent Number :");
 
-        Pname.setText("Parent Name :");
         Pname.setBackground(new java.awt.Color(255, 255, 255));
         Pname.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        Pname.setText("Parent Name :");
 
-        lblHaddress.setText("Home Address :");
         lblHaddress.setBackground(new java.awt.Color(255, 255, 255));
         lblHaddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblHaddress.setText("Home Address :");
 
         txtPNumber.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -271,48 +271,48 @@ public class Home extends javax.swing.JFrame {
 
         DOB.setDateFormatString("yyyy-MM-dd");
 
-        cbgender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Male", "Female" }));
         cbgender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbgender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Male", "Female" }));
         cbgender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbgenderActionPerformed(evt);
             }
         });
 
-        btnAdd.setText("Add");
         btnAdd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAdd.setText("Add");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
             }
         });
 
-        btnUpdate.setText("Update");
         btnUpdate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
 
-        btnDelete.setText("Delete");
         btnDelete.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
 
-        btnClear.setText("Reset");
         btnClear.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnClear.setText("Reset");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClearActionPerformed(evt);
             }
         });
 
-        btnSprint.setText("Print");
         btnSprint.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnSprint.setText("Print");
         btnSprint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSprintActionPerformed(evt);
@@ -421,16 +421,16 @@ public class Home extends javax.swing.JFrame {
         jTextField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        jButton4.setText("Refresh");
         jButton4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton4.setText("Refresh");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
-        jButton5.setText("Search");
         jButton5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton5.setText("Search");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -589,16 +589,16 @@ public class Home extends javax.swing.JFrame {
         jTextField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         jTextField8.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        jButton6.setText("Refresh");
         jButton6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton6.setText("Refresh");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Search");
         jButton7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton7.setText("Search");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -676,17 +676,17 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btnCsearch.setText("Search");
         btnCsearch.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCsearch.setText("Search");
         btnCsearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCsearchActionPerformed(evt);
             }
         });
 
-        jLabel11.setText("Student's ID");
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel11.setText("Student's ID");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -724,9 +724,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setText("ID");
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel12.setText("ID");
 
         jLabel13.setBackground(new java.awt.Color(255, 255, 255));
         jLabel13.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -740,12 +740,12 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel18.setText("Semester ");
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel18.setText("Semester ");
 
-        cbCSemester.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "1", "2" }));
         cbCSemester.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbCSemester.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "1", "2" }));
         cbCSemester.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbCSemesterActionPerformed(evt);
@@ -756,51 +756,51 @@ public class Home extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel15.setText("Course 2");
 
-        jLabel19.setText("Course 1");
         jLabel19.setBackground(new java.awt.Color(255, 255, 255));
         jLabel19.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel19.setText("Course 1");
 
-        jLabel20.setText("Course3");
         jLabel20.setBackground(new java.awt.Color(255, 255, 255));
         jLabel20.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel20.setText("Course3");
 
-        cbC1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "UX/UI", "Software Engineer", "Network", "Data Mining" }));
         cbC1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbC1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "UX/UI", "Software Engineer", "Network", "Data Mining" }));
         cbC1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbC1ActionPerformed(evt);
             }
         });
 
-        cbC2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "BIg Data", "R program", "Discrete Math" }));
         cbC2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbC2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "BIg Data", "R program", "Discrete Math" }));
         cbC2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbC2ActionPerformed(evt);
             }
         });
 
-        cbC3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "English", "Academic", "Buisness Analysis" }));
         cbC3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cbC3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "English", "Academic", "Buisness Analysis" }));
 
-        btnCAdd.setText("Add");
         btnCAdd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCAdd.setText("Add");
         btnCAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCAddActionPerformed(evt);
             }
         });
 
-        btnCPrint.setText("Print");
         btnCPrint.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCPrint.setText("Print");
         btnCPrint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCPrintActionPerformed(evt);
             }
         });
 
-        btnCClear.setText("Reset");
         btnCClear.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCClear.setText("Reset");
         btnCClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCClearActionPerformed(evt);
@@ -965,16 +965,16 @@ public class Home extends javax.swing.JFrame {
         jTextField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         jTextField9.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        jButton8.setText("Refresh");
         jButton8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton8.setText("Refresh");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
 
-        jButton9.setText("Search");
         jButton9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton9.setText("Search");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -1052,17 +1052,17 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btnGSearch.setText("Search");
         btnGSearch.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGSearch.setText("Search");
         btnGSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGSearchActionPerformed(evt);
             }
         });
 
-        jLabel22.setText("Student's ID");
         jLabel22.setBackground(new java.awt.Color(255, 255, 255));
         jLabel22.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel22.setText("Student's ID");
 
         txtGFindSemester.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1075,9 +1075,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel39.setText("Semester");
         jLabel39.setBackground(new java.awt.Color(255, 255, 255));
         jLabel39.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel39.setText("Semester");
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -1123,13 +1123,13 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel23.setText("ID");
         jLabel23.setBackground(new java.awt.Color(255, 255, 255));
         jLabel23.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel23.setText("ID");
 
-        jLabel24.setText("Student's ID ");
         jLabel24.setBackground(new java.awt.Color(255, 255, 255));
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel24.setText("Student's ID ");
 
         txtGstudent.setEditable(false);
         txtGstudent.setBackground(new java.awt.Color(204, 204, 204));
@@ -1139,17 +1139,17 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel27.setText("Course 2");
         jLabel27.setBackground(new java.awt.Color(255, 255, 255));
         jLabel27.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel27.setText("Course 2");
 
-        jLabel28.setText("Course 1");
         jLabel28.setBackground(new java.awt.Color(255, 255, 255));
         jLabel28.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel28.setText("Course 1");
 
-        jLabel29.setText("Course 3");
         jLabel29.setBackground(new java.awt.Color(255, 255, 255));
         jLabel29.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel29.setText("Course 3");
 
         txtGS1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         txtGS1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1178,32 +1178,32 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btnGadd.setText("Add");
         btnGadd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGadd.setText("Add");
         btnGadd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGaddActionPerformed(evt);
             }
         });
 
-        btnGupdate.setText("Update");
         btnGupdate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGupdate.setText("Update");
         btnGupdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGupdateActionPerformed(evt);
             }
         });
 
-        btnGclear.setText("Clear");
         btnGclear.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGclear.setText("Clear");
         btnGclear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGclearActionPerformed(evt);
             }
         });
 
-        btnGprint.setText("Print");
         btnGprint.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnGprint.setText("Print");
         btnGprint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGprintActionPerformed(evt);
@@ -1234,9 +1234,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel26.setText("Semester");
         jLabel26.setBackground(new java.awt.Color(255, 255, 255));
         jLabel26.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel26.setText("Semester");
 
         txtGSemester.setEditable(false);
         txtGSemester.setBackground(new java.awt.Color(204, 204, 204));
@@ -1440,17 +1440,17 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btnAsearch1.setText("Search");
         btnAsearch1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAsearch1.setText("Search");
         btnAsearch1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAsearch1ActionPerformed(evt);
             }
         });
 
-        jLabel34.setText("Student's ID");
         jLabel34.setBackground(new java.awt.Color(255, 255, 255));
         jLabel34.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel34.setText("Student's ID");
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
@@ -1488,32 +1488,32 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel35.setText("ID");
         jLabel35.setBackground(new java.awt.Color(255, 255, 255));
         jLabel35.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel35.setText("ID");
 
-        jLabel36.setText("Date");
         jLabel36.setBackground(new java.awt.Color(255, 255, 255));
         jLabel36.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel36.setText("Date");
 
-        btnAadd1.setText("Add");
         btnAadd1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAadd1.setText("Add");
         btnAadd1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAadd1ActionPerformed(evt);
             }
         });
 
-        btnAprint1.setText("Print");
         btnAprint1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAprint1.setText("Print");
         btnAprint1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAprint1ActionPerformed(evt);
             }
         });
 
-        btnAclear1.setText("Clear");
         btnAclear1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAclear1.setText("Clear");
         btnAclear1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAclear1ActionPerformed(evt);
@@ -1526,9 +1526,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel37.setText("Timeslot");
         jLabel37.setBackground(new java.awt.Color(255, 255, 255));
         jLabel37.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel37.setText("Timeslot");
 
         txtAID2.setBackground(new java.awt.Color(204, 204, 204));
         txtAID2.addActionListener(new java.awt.event.ActionListener() {
@@ -1537,16 +1537,16 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel40.setText("Student's ID");
         jLabel40.setBackground(new java.awt.Color(255, 255, 255));
         jLabel40.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel40.setText("Student's ID");
 
-        jLabel41.setText("Attendance Status");
         jLabel41.setBackground(new java.awt.Color(255, 255, 255));
         jLabel41.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel41.setText("Attendance Status");
 
-        jAComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Present ", "Absent" }));
         jAComboBox.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jAComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Present", "Absent" }));
         jAComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jAComboBoxActionPerformed(evt);
@@ -2269,7 +2269,7 @@ public class Home extends javax.swing.JFrame {
     private void btnAadd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAadd1ActionPerformed
      if (txtAID2.getText().isEmpty()) {
     JOptionPane.showMessageDialog(this, "Student ID is missing");
-} else {
+    } else {
     try {
         int sid = Integer.parseInt(txtAID2.getText());
         int id = attendance.getMax();  // Ensure this ID is truly unique
@@ -2287,6 +2287,7 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Invalid timeslot format. Please enter a numeric value.");
             return;  // Exit the method if timeslot is invalid
         }
+        
 
         // Check if the attendance record already exists
         if (attendance.isAttendanceExist(id)) { 
@@ -2294,6 +2295,9 @@ public class Home extends javax.swing.JFrame {
         } else {
             // Insert the attendance record
             attendance.insert(id, sid, date, timeslot, status);
+            jTable7.setModel(new DefaultTableModel(null, new Object[]{"ID", "Student id", "Date","Timeslot","Attendance Status"}));
+            attendance.getAttendanceValue(jTable7, "");
+            clearAttendances();
             JOptionPane.showMessageDialog(this, "Attendance added successfully"); 
         }
     } catch (NumberFormatException e) { 

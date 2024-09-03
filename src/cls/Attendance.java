@@ -66,7 +66,7 @@ public class Attendance {
 
     //insert date into attendance table
     public void insert(int id, int sid, String date, int timeslot, String status) {
-    String sql = "INSERT INTO Attendance (id, Student_id, Date, Timeslot, Status) VALUES (?, ?, ?, ?, ?)";
+    String sql = "INSERT INTO Attendance (id, student_id, Date, Timeslot, Status) VALUES (?, ?, ?, ?, ?)";
 
     PreparedStatement ps = null;
     try {

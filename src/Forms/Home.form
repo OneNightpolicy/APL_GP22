@@ -98,8 +98,6 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
-                <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Student Information system "/>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
@@ -109,6 +107,8 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="33" red="33" type="rgb"/>
                 </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Student Information system "/>
               </Properties>
               <Events>
                 <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="jLabel2MouseDragged"/>
@@ -331,79 +331,79 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="lblSID">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Student&apos;s ID :"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Student&apos;s ID :"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="lblSname">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Student&apos;s Name :"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Student&apos;s Name :"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="lblDOB">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Date of Birth :"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Date of Birth :"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="lblgender">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Gender :"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Gender :"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="lblPnumber">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Parent Number :"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Parent Number :"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="Pname">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Parent Name :"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Parent Name :"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="lblHaddress">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Home Address :"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Home Address :"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtPNumber">
@@ -423,15 +423,15 @@
                         </Component>
                         <Component class="javax.swing.JComboBox" name="cbgender">
                           <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="14" style="1"/>
+                            </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="3">
                                 <StringItem index="0" value=""/>
                                 <StringItem index="1" value="Male"/>
                                 <StringItem index="2" value="Female"/>
                               </StringArray>
-                            </Property>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Arial" size="14" style="1"/>
                             </Property>
                           </Properties>
                           <Events>
@@ -443,10 +443,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnAdd">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Add"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Add"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed"/>
@@ -454,10 +454,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnUpdate">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Update"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Update"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
@@ -465,10 +465,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnDelete">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Delete"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Delete"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
@@ -476,10 +476,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnClear">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Reset"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Reset"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnClearActionPerformed"/>
@@ -614,10 +614,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton4">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Refresh"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Refresh"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
@@ -625,10 +625,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton5">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Search"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
@@ -976,10 +976,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton6">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Refresh"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Refresh"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
@@ -987,10 +987,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton7">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Search"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
@@ -1162,10 +1162,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="btnCsearch">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Search"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCsearchActionPerformed"/>
@@ -1173,13 +1173,13 @@
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel11">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -1197,13 +1197,13 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel12">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="ID"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="ID"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel13">
@@ -1236,26 +1236,26 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel18">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Semester "/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Semester "/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JComboBox" name="cbCSemester">
                           <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="14" style="1"/>
+                            </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="3">
                                 <StringItem index="0" value=""/>
                                 <StringItem index="1" value="1"/>
                                 <StringItem index="2" value="2"/>
                               </StringArray>
-                            </Property>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Arial" size="14" style="1"/>
                             </Property>
                           </Properties>
                           <Events>
@@ -1281,28 +1281,31 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel19">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Course 1"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Course 1"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel20">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Course3"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Course3"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JComboBox" name="cbC1">
                           <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="14" style="1"/>
+                            </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="5">
                                 <StringItem index="0" value=""/>
@@ -1311,9 +1314,6 @@
                                 <StringItem index="3" value="Network"/>
                                 <StringItem index="4" value="Data Mining"/>
                               </StringArray>
-                            </Property>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Arial" size="14" style="1"/>
                             </Property>
                           </Properties>
                           <Events>
@@ -1325,6 +1325,9 @@
                         </Component>
                         <Component class="javax.swing.JComboBox" name="cbC2">
                           <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="14" style="1"/>
+                            </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="4">
                                 <StringItem index="0" value=""/>
@@ -1332,9 +1335,6 @@
                                 <StringItem index="2" value="R program"/>
                                 <StringItem index="3" value="Discrete Math"/>
                               </StringArray>
-                            </Property>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Arial" size="14" style="1"/>
                             </Property>
                           </Properties>
                           <Events>
@@ -1346,6 +1346,9 @@
                         </Component>
                         <Component class="javax.swing.JComboBox" name="cbC3">
                           <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="14" style="1"/>
+                            </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="4">
                                 <StringItem index="0" value=""/>
@@ -1354,9 +1357,6 @@
                                 <StringItem index="3" value="Buisness Analysis"/>
                               </StringArray>
                             </Property>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Arial" size="14" style="1"/>
-                            </Property>
                           </Properties>
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -1364,10 +1364,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnCAdd">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Add"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Add"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCAddActionPerformed"/>
@@ -1386,10 +1386,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnCClear">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Reset"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Reset"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCClearActionPerformed"/>
@@ -1681,10 +1681,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton8">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Refresh"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Refresh"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
@@ -1692,10 +1692,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton9">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Search"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
@@ -1908,10 +1908,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="btnGSearch">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Search"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGSearchActionPerformed"/>
@@ -1919,13 +1919,13 @@
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel22">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="txtGFindSemester">
@@ -1936,13 +1936,13 @@
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel39">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Semester"/>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Semester"/>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -1960,24 +1960,24 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel23">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="ID"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="ID"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel24">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Student&apos;s ID "/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Student&apos;s ID "/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtGstudent">
@@ -1996,35 +1996,35 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel27">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Course 2"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Course 2"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel28">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Course 1"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Course 1"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel29">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Course 3"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Course 3"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtGS1">
@@ -2065,10 +2065,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnGadd">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Add"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Add"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGaddActionPerformed"/>
@@ -2076,10 +2076,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnGupdate">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Update"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Update"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGupdateActionPerformed"/>
@@ -2087,10 +2087,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnGclear">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Clear"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Clear"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGclearActionPerformed"/>
@@ -2151,13 +2151,13 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel26">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Semester"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Semester"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtGSemester">
@@ -2512,10 +2512,10 @@
                             </Component>
                             <Component class="javax.swing.JButton" name="btnAsearch1">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Search"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Search"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAsearch1ActionPerformed"/>
@@ -2523,13 +2523,13 @@
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel34">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Arial" size="14" style="1"/>
                                 </Property>
+                                <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -2547,32 +2547,32 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel35">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="ID"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="ID"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel36">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Date"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Date"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="btnAadd1">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Add"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Add"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAadd1ActionPerformed"/>
@@ -2591,10 +2591,10 @@
                         </Component>
                         <Component class="javax.swing.JButton" name="btnAclear1">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Clear"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Clear"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAclear1ActionPerformed"/>
@@ -2607,13 +2607,13 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel37">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Timeslot"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Timeslot"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtAID2">
@@ -2631,36 +2631,37 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel40">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Student&apos;s ID"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel41">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Attendance Status"/>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
                             </Property>
+                            <Property name="text" type="java.lang.String" value="Attendance Status"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JComboBox" name="jAComboBox">
                           <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="2">
-                                <StringItem index="0" value="Present "/>
-                                <StringItem index="1" value="Absent"/>
-                              </StringArray>
-                            </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="14" style="1"/>
+                            </Property>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="3">
+                                <StringItem index="0" value=""/>
+                                <StringItem index="1" value="Present"/>
+                                <StringItem index="2" value="Absent"/>
+                              </StringArray>
                             </Property>
                           </Properties>
                           <Events>
