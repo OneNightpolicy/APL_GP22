@@ -2382,9 +2382,9 @@ public class Home extends javax.swing.JFrame {
                 } else {
                     System.out.println("Can't connect to database");
                 }
-                Home home = new Home();
-                home.setVisible(true);
-                home.setLocationRelativeTo(null);
+                Login login = new Login();
+                login.setVisible(true);
+                login.setLocationRelativeTo(null);
 
             }
         });
