@@ -15,9 +15,9 @@ public class DBConnection {
     public static Connection getConnection(){
         Connection con = null;
         try{
-            String url = "jdbc:mysql://myrds.chw2uiwwcexp.us-east-1.rds.amazonaws.com:3306/Student_infor";
-            String user = "admin";
-            String password = "250201aSAPL";
+            String url = "jdbc:mysql://127.0.0.1:3306/Student_infor";
+            String user = "root";
+            String password = "kim24"; 
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(url,user,password);
         } catch (ClassNotFoundException | SQLException e) {

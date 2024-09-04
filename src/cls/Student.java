@@ -45,7 +45,7 @@ public class Student {  // Use PascalCase for class names
             ps.setString(6, phone);
             ps.setString(7, address);
 
-            int rowsInserted = ps.executeUpdate();
+            int rowsInserted = ps.executeUpdate(); 
             if (rowsInserted > 0) {
                 JOptionPane.showMessageDialog(null, "New student added successfully.");
             }
